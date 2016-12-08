@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="portfolio">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body ng-controller="portfolioController as app">
+
+    <div class="hero section">
+      <div class="hero-text">
+        <h1 class="hero-text-line">{{app.labels.name}}</h1>
+        <h1 class="hero-text-line">{{app.labels.headline}}</h1>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>{{app.labels.work}}</h2>
+      <div class="project" ng-repeat="project in app.projects">
+        <img class="project-img" ng-src=project.img>
+        <div class="project-title">
+          {{project.title}}
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>{{app.labels.resume}}</h2>
+      <embed src="img/resume.pdf" width="95%" height="525" class="center" type='application/pdf'>
+    </div>
+
+    <div class="section">
+      <h2>{{app.labels.about}}</h2>
+    </div>
+
+    <div class="section">
+      <h2>{{app.labels.contact}}</h2>
+    </div>
+
+  </body>
+</html>
