@@ -1,0 +1,26 @@
+h1, h2 {
+  color: $green;
+  font-size: 3rem;
+}
+
+#tagline {
+  color: $green-highlight;
+}
+
+h2 {
+  margin: 4.375rem 0 3.125rem 1.875rem;
+}
+
+p {
+  margin: 0 0 1.875rem 1.875rem;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a.contact {
+  margin: 0 0 0.625rem 1.875rem;
+  font-size: 1.25rem;
+  display: block;
+}
