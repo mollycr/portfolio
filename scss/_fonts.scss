@@ -1,18 +1,9 @@
 h1, h2 {
   color: $green;
-  font-size: 3rem;
 }
 
 #tagline {
   color: $green-highlight;
-}
-
-h2 {
-  margin: 4.375rem 0 3.125rem 1.875rem;
-}
-
-p {
-  margin: 0 0 1.875rem 1.875rem;
 }
 
 body {
@@ -20,7 +11,64 @@ body {
 }
 
 a.contact {
-  margin: 0 0 0.625rem 1.875rem;
-  font-size: 1.25rem;
   display: block;
+}
+
+
+@media screen and (max-width: $medium) {
+  //mobile
+  h1, h2 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    margin: 2.5rem 0 1.875rem 1.25rem;
+  }
+
+  p {
+    margin: 0 0 1.875rem 1.25rem;
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  a.contact {
+    margin: 0 0 0.625rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    margin: 1.875rem 0 1.875rem 1.875rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: $medium) {
+  //desktop
+  h1, h2 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    margin: 4.375rem 0 3.125rem 1.875rem;
+  }
+  #page-title {
+    margin-top: 1.25rem;
+  }
+
+  p {
+    margin: 0 0 1.875rem 1.875rem;
+    width: 90%;
+    font-size: 1.125rem;
+    line-height: 1.4rem;
+  }
+
+  a.contact {
+    margin: 0 0 0.625rem 1.875rem;
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    margin: 2.5rem 0 1.875rem 1.875rem;
+    font-size: 2rem;
+  }
 }

@@ -1,11 +1,6 @@
 body {
 	background-color: $background;
-  min-width: 320px;
-}
-
-@mixin clearfix {
-	overflow: auto;
-	clear: both;
+  min-width: $small;
 }
 
 .hero{
@@ -24,23 +19,51 @@ body {
 }
 .hero-tag {
   position: relative;
-  top: 56vh;
+  top: 56vh; //mobile 50
   left: 15%;
 }
-.hero-text-line {
+.hero-name {
   position: relative;
-  top: 70vh;
+  top: 70vh; //mobile 59
   left: 15%;
+}
+.hero-text {
+  display: block;
+  max-width: 70%;
+  margin-right: 0;
+}
+
+@media screen and (max-width: $medium) {
+  //mobile
+  .hero-tag {
+    top: 50vh;
+  }
+  .hero-name {
+    top: 59vh;
+  }
+}
+@media screen and (min-width: $medium) {
+  //desktop
+  .hero-tag {
+    top: 56vh;
+  }
+  .hero-name {
+    top: 70vh;
+  }
 }
 
 .res-container {
   width: 80%;
   margin: 0 auto;
+}
+
+.work-img {
   border: 1px solid $black;
+  margin-bottom: 2.5rem;
 }
 
 //work tiles
-.project-container {
+.project-container, .work-img-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -49,31 +72,74 @@ body {
 }
 
 .project {
-  margin: 0 1.875rem 4.375rem 1.875rem;
-  height: 15.125rem;
-  width: 12.75rem;
   text-align: center;
   background-color: $background-alt;
   border-radius: 0.25rem;
 }
 
-.project-img {
-	height: 12.5rem; //200px
-	width: 12.5rem;
-  margin-top: 0.125rem;
+@media screen and (max-width: $medium) {
+  //mobile
+  .project {
+    margin: 0 0.75rem 1.875rem 1rem;
+    height: 10.4375rem; //134x167
+    width: 8.375rem;
+  }
+  .project-img {
+  	height: 8rem; //128px
+  	width: 8rem;
+    margin-top: 0.125rem;
+  }
+  .project-title {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: $medium) {
+  //desktop
+  .project {
+    margin: 0 1.875rem 4.375rem 1.875rem;
+    height: 15.125rem;
+    width: 12.75rem;
+  }
+  .project-img {
+  	height: 12.5rem; //200px
+  	width: 12.5rem;
+    margin-top: 0.125rem;
+  }
+  .project-title {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+  }
+  .res-container {
+    border: 1px solid $black;
+  }
 }
 
-.project-title {
-  margin-top: 0.5rem;
-  font-size: 1.25rem;
-}
 
-.footer{
-  width: 100%;
-  height: 2.5rem;
+.footer {
+  height: 2rem;
   font-size: 0.75rem;
   text-align: right;
   padding: 0.9375rem 1.625rem 0 0;
+  margin-top: 1.875rem;
   color: $green;
   background-color: $grey;
+}
+
+.header {
+  height: 2.5rem;
+  font-size: 1.25rem;
+  padding: 0.625rem 0 0 1.25rem;
+  color: $green;
+  background-color: $grey;
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
 }

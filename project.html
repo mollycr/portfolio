@@ -1,0 +1,15 @@
+<div class="header">
+  <h3>{{app.labels.name}}</h3>
+</div>
+
+<h2 id="page-title">{{app.cp.title}}</h2>
+
+<p>{{app.cp.summary}}</p>
+
+<div ng-repeat="par in app.cp.paragraphs">
+  <h3 class="subtitle">{{par.subtitle}}</h3>
+  <div class="work-img-container">
+    <img class="work-img" ng-repeat="img in par.imgs track by $index" ng-src="{{img}}">
+  </div>
+  <p>{{par.text}}</p>
+</div>
