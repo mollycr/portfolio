@@ -6,19 +6,31 @@
 
 <p ng-show="app.cp.summary">{{app.cp.summary}}</p>
 
-<div ng-repeat="par in app.cp.paragraphs">
+<div ng-repeat="par in app.cp.paragraphs track by $index">
   <h3 class="subtitle" ng-show="par.subtitle">{{par.subtitle}}</h3>
   <div class="work-img-container">
-    <img class="work-img" ng-class="{'mobile-img': par.mobile}" ng-repeat="img in par.imgs track by $index" ng-src="{{img}}">
+    <a class="work-img-a" ng-repeat="img in par.imgs" href="{{img}}" data-lightbox="a{{$parent.$index}}">
+      <img class="work-img" ng-class="{'mobile-img': par.mobile}" ng-src="{{img}}">
+    </a>
   </div>
   <p ng-repeat="p in par.text">{{p}}</p>
 
-  <div ng-show="par.appspirinHack">
+  <div ng-if="par.appspirinHack">
     <div class="videowrapper">
       <iframe class="vid" type="text/html" src="https://www.youtube.com/embed/Oyll7g1ERH4"></iframe>
     </div>
-    <div class="res-container">
+    <div class="pdf-container">
       <object data="img/appspirin/presentation.pdf" type="application/pdf" width="100%" height="500px">
+        Download <a href="img/appspirin/presentation.pdf">our presentation</a>.
+      </object>
+    </div>
+  </div>
+
+  <div ng-if="par.teledrawHack">
+    <div class="pdf-container">
+      <object data="img/teledraw/sketches.pdf" type="application/pdf" width="100%" height="500px">
+        Download <a href="img/teledraw/sketches.pdf">my sketches</a>.
+      </object>
     </div>
   </div>
 

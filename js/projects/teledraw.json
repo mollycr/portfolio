@@ -1,10 +1,11 @@
 {"title": "Teledraw",
   "img": "img/thumbs/teledraw.png",
-  "summary": "My friends and I like to play a game that we call teledraw. When we all moved to different parts of the country we started playing it over chat, then some industrious friends made a web app, and I’m doing the UI.",
+  "summary": "My friends and I like to play a game that we call teledraw. When we all moved to different parts of the country we started playing it over chat, then some industrious friends made a web app, and I’m doing the UI. This project is in progress.",
   "paragraphs": [
     {"subtitle": "Sketches",
-      "imgs": ["img/appspirin/1.png"],
-      "text": ["asdf"]},
+      "imgs": [],
+      "teledrawHack": true,
+      "text": [""]},
     {"subtitle": "Wireframes",
       "imgs": ["img/teledraw/wires/1.png", "img/teledraw/wires/2.png", "img/teledraw/wires/3.png", "img/teledraw/wires/5.png", "img/teledraw/wires/6.png"],
       "text": [""]}
