@@ -1,0 +1,12 @@
+{"title": "Art",
+  "img": "img/thumbs/art.png",
+  "summary": "",
+  "paragraphs": [
+    {"subtitle": "Cross Stitch Patterns",
+      "imgs": ["img/art/antidepressants.png", "img/art/matches.png"],
+      "text": [""]},
+      {"subtitle": "Prints",
+        "imgs": ["img/art/utensils.png", "img/art/wallpaper.png"],
+        "text": [""]}
+  ]
+}

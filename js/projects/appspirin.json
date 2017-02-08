@@ -1,0 +1,26 @@
+{"title": "Appspirin",
+  "img": "img/thumbs/appspirin.png",
+  "summary": "For my Master’s final project, I worked with Jung-Wei (Kayu) Chen to design and prototype an app to help UC Berkeley students manage their stress. Recently, I redesigned the app using Google’s Material Design framework.",
+  "paragraphs": [
+    {"subtitle": "Background",
+      "imgs": ["img/appspirin/testing.jpg"],
+      "text": ["The student health center at UC Berkeley has a counseling center that is underused for most of the year but can’t keep up with demands during exam season. Our first thought was to try to smooth out that curve by encouraging more students to seek preventative care, by streamlining the appointment process and raising awareness. But when we started talking to students, we discovered a problem with that idea: no one we talked to thought that they would benefit from therapy. Since we think that literally everyone can benefit from therapy, this was surprising! But it’s very consistent with America’s popular idea of mental health: crazy people need therapists and everyone else is fine. But (of course) it’s not that simple."]},
+    {"subtitle": "Approach",
+      "mobile": true,
+      "imgs": ["img/appspirin/screens/2015/2.png", "img/appspirin/screens/2015/3.png", "img/appspirin/screens/2015/4.png"],
+      "text": ["Our new goal was to show students that, in fact, they do have mental health, and can benefit from taking care of it. We tried to frame it in terms of 'this thing can make you even better than you already are!' over 'you’re a stressed-out mess and this will help that,' since the last thing we wanted to do was reinforce any existing ideas that mental healthcare is only for “sick” people.",
+    "Our approach was influenced by cognitive-behavioral therapy, a standard therapeutic technique that, among other things, identifies coping mechanisms that aren’t working and teaches more effective ones. The basic idea behind Appspirin is simple: you get a notification to check in, you rate your stress level from 1-6, and if you’re stressed Appspirin will recommend something you can do to feel better, maybe taking a walk, listening to a guided meditation, or making a to-do list. After you complete the activity Appspirin asks if it was helpful, and uses that information to recommend better strategies. Users can add their own strategies or remove default ones. The resources section contains information about mental healthcare at UC Berkeley, links and phone numbers to helplines, and tips for managing stress in college and in life."]},
+    {"subtitle": "Presentation",
+      "imgs": ["img/appspirin/poster.png"],
+      "text": [""],
+      "appspirinHack": true},
+    {"subtitle": "Redesign",
+      "mobile": true,
+      "imgs": ["img/appspirin/screens/2016/2.png", "img/appspirin/screens/2016/3.png", "img/appspirin/screens/2016/4.png"],
+      "text": [""]},
+    {"subtitle": "",
+      "mobile": true,
+      "imgs": ["img/appspirin/screens/2016/5.png", "img/appspirin/screens/2016/6.png", "img/appspirin/screens/2016/7.png"],
+      "text": [""]}
+  ]
+}

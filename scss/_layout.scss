@@ -60,6 +60,28 @@ body {
 .work-img {
   border: 1px solid $black;
   margin-bottom: 2.5rem;
+	max-width: 100%;
+	height: auto;
+}
+
+.videowrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 1.875rem;
+	margin-left: 1.875rem;
+	height: 0;
+}
+
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 95%;
+	height: 95%;
+}
+
+.mobile-img {
+	max-width: 12.5rem;
 }
 
 //work tiles
@@ -67,6 +89,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+	align-items: center;
   width: 90%;
   margin: 0 auto;
 }

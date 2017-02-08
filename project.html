@@ -4,12 +4,22 @@
 
 <h2 id="page-title">{{app.cp.title}}</h2>
 
-<p>{{app.cp.summary}}</p>
+<p ng-show="app.cp.summary">{{app.cp.summary}}</p>
 
 <div ng-repeat="par in app.cp.paragraphs">
-  <h3 class="subtitle">{{par.subtitle}}</h3>
+  <h3 class="subtitle" ng-show="par.subtitle">{{par.subtitle}}</h3>
   <div class="work-img-container">
-    <img class="work-img" ng-repeat="img in par.imgs track by $index" ng-src="{{img}}">
+    <img class="work-img" ng-class="{'mobile-img': par.mobile}" ng-repeat="img in par.imgs track by $index" ng-src="{{img}}">
   </div>
-  <p>{{par.text}}</p>
+  <p ng-repeat="p in par.text">{{p}}</p>
+
+  <div ng-show="par.appspirinHack">
+    <div class="videowrapper">
+      <iframe class="vid" type="text/html" src="https://www.youtube.com/embed/Oyll7g1ERH4"></iframe>
+    </div>
+    <div class="res-container">
+      <object data="img/appspirin/presentation.pdf" type="application/pdf" width="100%" height="500px">
+    </div>
+  </div>
+
 </div>

@@ -5,10 +5,10 @@ var appa = angular.module('portfolio', ["ngRoute"])
     app.cp = {};
 
     app.setCurrentProject = function(id) {
-      //TODO: I want this to be a pointer and idk if it is
       app.cp = app.projects[id];
       console.log(id);
       $location.url("/projects");
+      $location.hash("top");
       return;
     };
 
@@ -26,49 +26,15 @@ var appa = angular.module('portfolio', ["ngRoute"])
        "In my spare time I officiate with the Peninsula Roller Girls as Joelle Van Die, sew pretty poorly, and knit pretty well."],
     };
 
-    app.projects = [
-      {title: "Appspirin",
-        img: "img/thumbs/appspirin.png",
-        summary: "This is a one-sentence summary, roughly. It actually has two sentences, so sue me.",
-        paragraphs: [
-          {subtitle: "Lorem Ipsum",
-          imgs: ["img/pr-placeholder.png", "img/pr-placeholder.png", "img/pr-placeholder.png"],
-          text: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
-        ]
-      },
-      {title: "Teledraw",
-        img: "img/thumbs/teledraw.png",
-        summary: "asdf",
-        paragraphs: [
-          {imgs: ["img/appspirin/1.png"],
-          text: "asdf"}
-        ]
-      },
-      {title: "Auction Pal",
-        img: "img/thumbs/auctionPal.png",
-        summary: "asdf",
-        paragraphs: [
-          {imgs: ["img/appspirin/1.png"],
-          text: "asdf"}
-        ]
-      },
-      {title: "Foreclosure",
-        img: "img/thumbs/foreclosure.png",
-        summary: "asdf",
-        paragraphs: [
-          {imgs: ["img/appspirin/1.png"],
-          text: "asdf"}
-        ]
-      },
-      {title: "Art",
-        img: "img/thumbs/utensils.png",
-        summary: "asdf",
-        paragraphs: [
-          {imgs: ["img/appspirin/1.png"],
-          text: "asdf"}
-        ]
-      }
-    ];
+    app.projectFiles = ["js/projects/appspirin.json", "js/projects/auctionPal.json", "js/projects/teledraw.json", "js/projects/foreclosure.json", "js/projects/art.json"];
+
+    app.projects = [];
+
+    for (var i = 0, len = app.projectFiles.length; i < len; i++) {
+      $.getJSON(app.projectFiles[i], function(json) {
+        app.projects.push(json);
+      })
+    };
 
   }]);
 
