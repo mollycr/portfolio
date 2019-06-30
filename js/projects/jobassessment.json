@@ -1,0 +1,30 @@
+{"title": "Job Assessment Redesign",
+  "img": "img/thumbs/auctionPal.png",
+  "summary": "Redesigning the primary page of The Humantech System: The Job Assessment.",
+  "paragraphs": [
+    {"subtitle": "Background",
+      "imgs": ["img/jobAssessment/auction.jpg"],
+      "text": ["The Humantech System is Humantech's primary product. It is a SaaS platform used to perform and track ergonomic assessments"
+      ]
+    },
+    {"subtitle": "Research",
+      "imgs": ["img/jobAssessment/bingoboard.jpg"],
+      "text": ["",
+        ""
+    ]
+    },
+    {"subtitle": "Sketching and Wireframes",
+      "imgs": ["img/jobAssessment/property.jpg"],
+      "text": ["",
+        ""
+      ]
+    },
+    {"subtitle": "High-Fidelity Designs",
+      "imgs": ["img/jobAssessment/Novice.png", "img/auctionPal/Investor.png", "img/auctionPal/Corporation.png", "img/auctionPal/ProxyBidder.png"
+      ],
+      "text": ["",
+        ""
+      ]
+    }
+  ]
+}

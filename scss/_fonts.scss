@@ -1,17 +1,14 @@
-h1, h2 {
-  color: $green;
+h1 {
+  color: $white;
 }
 
-#tagline {
-  color: $green-highlight;
+h2 {
+  color: $mid;
+  font-family: 'DM Serif Display', serif;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-}
-
-p, a {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Noto Serif', serif;
 }
 
 a.contact {
@@ -21,7 +18,11 @@ a.contact {
 
 @media screen and (max-width: $medium) {
   //mobile
-  h1, h2 {
+  h1{
+    font-size: 4rem;
+  }
+
+  h2 {
     font-size: 2.25rem;
   }
 
@@ -33,7 +34,7 @@ a.contact {
     margin: 0 0 1.875rem 1.25rem;
     width: 90%;
     font-size: 1rem;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
   }
 
   a.contact {
@@ -48,7 +49,11 @@ a.contact {
 }
 @media screen and (min-width: $medium) {
   //desktop
-  h1, h2 {
+  h1{
+    font-size: 6.5rem;
+  }
+
+  h2 {
     font-size: 3rem;
   }
 
@@ -62,8 +67,8 @@ a.contact {
   p {
     margin: 0 0 1.875rem 1.875rem;
     width: 90%;
-    font-size: 1.125rem;
-    line-height: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   a.contact {

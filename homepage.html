@@ -1,9 +1,18 @@
 <div class="hero">
-  <div class="hero-tag hero-text">
-    <h1 id="tagline">{{app.labels.tagline}}</h1>
-  </div>
   <div class="hero-name hero-text">
     <h1>{{app.labels.name}}</h1>
+  </div>
+</div>
+
+<div class="section">
+  <p ng-repeat="par in app.text.about">{{par}}</p>
+</div>
+
+<div class="section">
+  <div class="pdf-container">
+    <object data="img/resume.pdf" type="application/pdf" width="100%" height="500px">
+      Download <a href="img/resume.pdf">my resume</a>.
+    </object>
   </div>
 </div>
 
@@ -20,22 +29,8 @@
 </div>
 
 <div class="section">
-  <h2>{{app.labels.resume}}</h2>
-  <div class="pdf-container">
-    <object data="img/resume.pdf" type="application/pdf" width="100%" height="500px">
-      Download <a href="img/resume.pdf">my resume</a>.
-    </object>
-  </div>
-</div>
-
-<div class="section">
-  <h2>{{app.labels.about}}</h2>
-  <p ng-repeat="par in app.text.about">{{par}}</p>
-</div>
-
-<div class="section">
   <h2>{{app.labels.contact}}</h2>
-  <a class="contact" href="mailto:molly.robison@gmail.com">Email</a></br>
-  <a class="contact" href="http://www.linkedin.com/in/molly-robison-26a13921">LinkedIn</a></br>
+  <a class="contact" href="mailto:o.n.robison@gmail.com">Email</a></br>
+  <a class="contact" href="https://www.linkedin.com/in/owen-robison-26a13921/">LinkedIn</a></br>
   <a class="contact" href="https://github.com/mollycr">GitHub</a>
 </div>
