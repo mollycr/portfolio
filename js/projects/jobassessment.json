@@ -1,4 +1,4 @@
-{"title": "Job Assessment Redesign",
+{"title": "Job Assessment",
   "img": "img/thumbs/auctionPal.png",
   "summary": "Redesigning the primary page of The Humantech System: The Job Assessment.",
   "paragraphs": [
@@ -20,7 +20,7 @@
       ]
     },
     {"subtitle": "High-Fidelity Designs",
-      "imgs": ["img/jobAssessment/Novice.png", "img/auctionPal/Investor.png", "img/auctionPal/Corporation.png", "img/auctionPal/ProxyBidder.png"
+      "imgs": ["img/jobAssessment/Novice.png"
       ],
       "text": ["",
         ""

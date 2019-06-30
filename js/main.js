@@ -22,7 +22,8 @@ var appa = angular.module('portfolio', ["ngRoute"])
 
     app.text = {
       about: ["Design is a social issue. Information professionals wield a lot of power today - we decide what to highlight and what to hide, which influences how people act and feel. Society is so intertwined with technology, and the design decisions that we make have a strong impact on humanity. We can use design to empower, or to disenfranchise, and we should not take that power lightly. As we shape the digital commons, we need to be mindful that we\'re not just building products, we\'re building a world. Designers are architects that work to make that world liveable.",
-      "In light of all that, I'm selective about what I contribute to. Ads, e-commerce and driving click traffic aren\'t things that I can be passionate about. I work on products that empower people to make good and informed decisions that are in their best interest, not the product\'s."]
+      "In light of all that, I'm selective about what I contribute to. Ads, e-commerce and driving click traffic aren\'t things that I can be passionate about. I work on products that empower people to make good and informed decisions that are in their best interest, not the product\'s.",
+      "I am a transgender man - I use he/him pronouns. A lot of my work is under my previous name."]
     };
 
     app.projectFiles = ["js/projects/jobassessment.json", "js/projects/appspirin.json", "js/projects/auctionPal.json", "js/projects/teledraw.json", "js/projects/foreclosure.json", "js/projects/art.json"];
